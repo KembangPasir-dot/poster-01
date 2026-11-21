@@ -17,6 +17,8 @@ OUT_DIR = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
 
 
 def main():
+    if not SRC.exists():
+        raise ValueError(f"Source image missing: {SRC}")
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     destination = OUT_DIR / IMAGE_NAME
     shutil.copyfile(SRC, destination)
