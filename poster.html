@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VISIT KRZVANIA</title>
+<style>
+  html, body { margin: 0; padding: 0; width: 1024px; height: 1024px; overflow: hidden; background: #141a33; }
+  svg { display: block; width: 1024px; height: 1024px; }
+</style>
+</head>
+<body>
+<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141a33"/>
+      <stop offset="0.30" stop-color="#2e3157"/>
+      <stop offset="0.52" stop-color="#6b4a5e"/>
+      <stop offset="0.68" stop-color="#b06a35"/>
+      <stop offset="0.82" stop-color="#e0a44a"/>
+      <stop offset="1" stop-color="#e8b34a"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fdf0b0" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#f8dc7d" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f8dc7d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="duneFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a4a24"/>
+      <stop offset="1" stop-color="#5f3a1c"/>
+    </linearGradient>
+    <linearGradient id="duneMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a06a2e"/>
+      <stop offset="1" stop-color="#7d5222"/>
+    </linearGradient>
+    <linearGradient id="duneNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cf9a48"/>
+      <stop offset="1" stop-color="#a5762f"/>
+    </linearGradient>
+    <!-- dromedary camel silhouette, facing right, local box ~130 x 96, feet at y=94 -->
+    <g id="camel">
+      <ellipse cx="60" cy="54" rx="44" ry="19"/>
+      <ellipse cx="58" cy="37" rx="21" ry="15"/>
+      <path d="M96,46 C112,34 114,18 110,8 L118,5 C123,18 121,34 107,48 Z"/>
+      <ellipse cx="113" cy="8" rx="10" ry="6"/>
+      <path d="M121,6 l7,2 l-7,3 Z"/>
+      <path d="M16,50 C10,60 10,68 14,76" fill="none" stroke="#241608" stroke-width="3.5"/>
+      <circle cx="14" cy="78" r="3.5"/>
+      <rect x="28" y="66" width="6" height="28" transform="rotate(4 31 66)"/>
+      <rect x="48" y="66" width="6" height="28" transform="rotate(-3 51 66)"/>
+      <rect x="72" y="66" width="6" height="28" transform="rotate(3 75 66)"/>
+      <rect x="88" y="66" width="6" height="28" transform="rotate(-4 91 66)"/>
+      <rect x="46" y="24" width="28" height="9" rx="2"/>
+      <ellipse cx="60" cy="20" rx="13" ry="7"/>
+    </g>
+    <!-- walking guide with staff, local box ~46 x 64, feet at y=62 -->
+    <g id="guide">
+      <circle cx="20" cy="7" r="6.5"/>
+      <path d="M20,14 L17,34 L13,60 M20,14 L24,32 L30,58 M17,20 L8,30 M23,19 L32,28" fill="none" stroke="#241608" stroke-width="4.5" stroke-linecap="round"/>
+      <path d="M33,4 L27,62" stroke="#241608" stroke-width="3" stroke-linecap="round"/>
+      <path d="M14,30 L26,30" stroke="#241608" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- sky -->
+  <rect x="0" y="0" width="1024" height="1024" fill="url(#sky)"/>
+
+  <!-- stars in the indigo top -->
+  <g fill="#f6ecd2">
+    <circle cx="90" cy="70" r="2.2" opacity="0.9"/><circle cx="180" cy="120" r="1.6" opacity="0.7"/>
+    <circle cx="260" cy="60" r="2.0" opacity="0.85"/><circle cx="340" cy="140" r="1.5" opacity="0.6"/>
+    <circle cx="430" cy="70" r="2.4" opacity="0.9"/><circle cx="520" cy="120" r="1.6" opacity="0.7"/>
+    <circle cx="700" cy="80" r="2.0" opacity="0.85"/><circle cx="790" cy="130" r="1.5" opacity="0.6"/>
+    <circle cx="880" cy="70" r="2.2" opacity="0.9"/><circle cx="950" cy="150" r="1.7" opacity="0.7"/>
+    <circle cx="60" cy="200" r="1.6" opacity="0.6"/><circle cx="920" cy="230" r="1.8" opacity="0.7"/>
+    <circle cx="480" cy="190" r="1.5" opacity="0.55"/><circle cx="830" cy="200" r="1.6" opacity="0.6"/>
+    <path d="M150,90 l3,7 7,3 -7,3 -3,7 -3,-7 -7,-3 7,-3 Z" opacity="0.9"/>
+    <path d="M760,60 l3,7 7,3 -7,3 -3,7 -3,-7 -7,-3 7,-3 Z" opacity="0.85"/>
+    <path d="M600,160 l2.5,6 6,2.5 -6,2.5 -2.5,6 -2.5,-6 -6,-2.5 6,-2.5 Z" opacity="0.7"/>
+  </g>
+
+  <!-- sun + glow -->
+  <circle cx="655" cy="548" r="260" fill="url(#sunGlow)"/>
+  <circle cx="655" cy="548" r="104" fill="#f8dc7d"/>
+  <circle cx="655" cy="548" r="104" fill="none" stroke="#fbeec0" stroke-width="2" opacity="0.7"/>
+
+  <!-- far dune + watchtower of VRKHAN -->
+  <path d="M0,640 C180,610 320,596 480,606 C660,618 840,600 1024,614 L1024,1024 L0,1024 Z" fill="url(#duneFar)"/>
+  <g fill="#3a2410">
+    <rect x="148" y="528" width="46" height="86"/>
+    <rect x="142" y="516" width="58" height="14"/>
+    <rect x="142" y="508" width="10" height="10"/><rect x="164" y="508" width="10" height="10"/><rect x="186" y="508" width="10" height="10"/>
+    <rect x="168" y="470" width="4" height="40"/>
+    <path d="M172,470 L196,477 L172,484 Z" fill="#c98f3e"/>
+    <rect x="163" y="560" width="16" height="24" rx="8" fill="#e8b34a" opacity="0.85"/>
+  </g>
+
+  <!-- mid dune -->
+  <path d="M0,716 C200,690 380,676 560,686 C740,696 900,684 1024,692 L1024,1024 L0,1024 Z" fill="url(#duneMid)"/>
+
+  <!-- near dune crest the caravan walks on -->
+  <path d="M0,806 C220,766 420,726 620,704 C780,688 920,680 1024,676 L1024,1024 L0,1024 Z" fill="url(#duneNear)"/>
+
+  <!-- caravan silhouettes, feet on the crest -->
+  <g fill="#241608">
+    <use href="#guide" transform="translate(238,668) scale(0.95)"/>
+    <use href="#camel" transform="translate(300,652) scale(1.0)"/>
+    <use href="#camel" transform="translate(472,628) scale(0.85)"/>
+    <use href="#camel" transform="translate(626,612) scale(0.72)"/>
+    <use href="#camel" transform="translate(766,600) scale(0.60)"/>
+  </g>
+
+  <!-- foreground dune -->
+  <path d="M0,900 C260,872 520,858 780,872 C900,879 980,884 1024,888 L1024,1024 L0,1024 Z" fill="#4a2c12"/>
+  <g stroke="#4a2c12" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M120,898 q6,-18 12,0 M132,898 q6,-16 12,0"/>
+    <path d="M880,892 q6,-18 12,0 M892,892 q6,-16 12,0"/>
+  </g>
+
+  <!-- title block -->
+  <text x="512" y="152" text-anchor="middle" font-family="'DejaVu Serif', Georgia, serif" font-weight="700" font-size="126" letter-spacing="14" fill="#241608" opacity="0.35">KRZVANIA</text>
+  <text x="512" y="148" text-anchor="middle" font-family="'DejaVu Serif', Georgia, serif" font-weight="700" font-size="126" letter-spacing="14" fill="#f6ecd2">KRZVANIA</text>
+  <text x="512" y="200" text-anchor="middle" font-family="'DejaVu Serif', Georgia, serif" font-weight="700" font-size="29" letter-spacing="11" fill="#f2c968">LAND OF THE CARAVAN STARS</text>
+  <g stroke="#f2c968" stroke-width="1.5">
+    <line x1="330" y1="226" x2="478" y2="226"/><line x1="546" y1="226" x2="694" y2="226"/>
+  </g>
+  <path d="M512,218 l8,8 -8,8 -8,-8 Z" fill="#f2c968"/>
+
+  <!-- bottom info strip -->
+  <text x="512" y="962" text-anchor="middle" font-family="'DejaVu Sans', 'Noto Sans', sans-serif" font-size="17" letter-spacing="2" fill="#ead9ae">BEST SEASON NOV – APR &#183; CARAVANS FROM VRKHAN &#183; GUIDE LICENCE C-0917</text>
+
+  <!-- vintage double frame -->
+  <rect x="14" y="14" width="996" height="996" fill="none" stroke="#f6ecd2" stroke-width="3"/>
+  <rect x="26" y="26" width="972" height="972" fill="none" stroke="#f6ecd2" stroke-width="1.5" opacity="0.85"/>
+</svg>
+</body>
+</html>
